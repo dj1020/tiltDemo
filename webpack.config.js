@@ -9,7 +9,7 @@ const extractSass = new ExtractTextPlugin({
 });
 
 var config = {
-	
+
 	entry: [
 		path.join(__dirname, 'src', 'main')
 	],
@@ -48,12 +48,12 @@ var config = {
 	            })
         	},
         	// image & font
-      		{ 
-      			test: /\.(woff|woff2|eot|ttf|otf)$/i, 
+      		{
+      			test: /\.(woff|woff2|eot|ttf|otf)$/i,
       			loader: 'url-loader?limit=8192&name=[name].[ext]'
-      		},	
-      		{ 
-      			test: /\.(jpe?g|png|gif|svg)$/i, 
+      		},
+      		{
+      			test: /\.(jpe?g|png|gif|svg)$/i,
       			loader: 'url-loader?limit=8192&name=[name].[ext]'
       		},
       		{
@@ -95,6 +95,7 @@ var config = {
           jquery: 'jquery',
           'window.jQuery': 'jquery',
           'root.jQuery': 'jquery',
+          tilt: 'tilt.js',
       	}),
   	]
 }
