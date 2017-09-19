@@ -1,7 +1,9 @@
-import Vue from 'vue'
+import Vue from 'vue';
+import MyApp from './MyApp';
 
 /* eslint-disable no-new */
 new Vue({
 	el: '#app',
-	template: '<h1>Hello Vue</h1>'
-});
+	template: '<MyApp></MyApp>',
+	components: { MyApp }
+})
